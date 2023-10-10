@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Basic styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #ff00ff, #00ff00, #0000ff, #ff00ff);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: #fff;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+         /* Apply background to the "About Me" section */
+         #about {
+            background: linear-gradient(45deg, #ff00ff, #00ff00, #0000ff, #ff00ff);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: #fff;
+        }
+
+        /* Apply background to the "Contact" section */
+        #contact {
+            background: linear-gradient(45deg, #ff00ff, #00ff00, #0000ff, #ff00ff);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: #fff;
+        }
+
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header ul li:last-child {
+    margin-right: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #ffc107;
+}
+
+/* Section styles */
+section {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Project styles */
+.project h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    header ul li {
+        margin-right: 15px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+}
+/* Styling for the profile image */
+.profile-image {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits within its container */
+    border: 4px solid #fff; /* Adds a white border */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+    margin-right: 20px; /* Adjust the spacing as needed */
+}
+/* Styling for the contact section */
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.contact-list a i {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #0077B5; /* LinkedIn color */
+}
+
+.contact-list a i.fa-whatsapp {
+    color: #25D366; /* WhatsApp color */
+}
+
+    </style>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <img src="your-photo.jpg" alt="Your Name's Photo" class="profile-image">
+                <h1>Varaprasad Samantala</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about" class="bg-light">
+        <div class="container">
+            <h2>About Me</h2>
+            <p> "I'm Varaprasad Samantala, a passionate computer science and engineering student. With a keen eye for detail, I thrive on solving complex problems and writing clean, efficient code. My commitment to learning and adaptability drives me to stay up-to-date with emerging technologies. I'm eager to embark on my professional journey, where I can apply my skills and contribute to innovative solutions. Let's connect and explore new horizons together!"</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Face detection</h3>
+                <p>Face detection is a computer vision technique that identifies and locates human faces within images or video frames, enabling applications like facial recognition and tracking. It's widely used in security, photography, and human-computer interaction.</p>
+            </div>
+            <div class="project">
+                <h3>Background remover</h3>
+                <p>A background remover is a tool or algorithm that automatically extracts the subject from an image or video, allowing you to replace or remove the background easily for various creative and practical purposes, such as product photography or video conferencing.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>You can reach me on:</p>
+            <ul class="contact-list">
+                <li>
+                    <a href="mailto:varaprasadsamantala@email.com">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/varaprasad-samantala-a386b9266/" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/917207800128" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Varaprasad Samantala</p>
+        </div>
+    </footer>
+</body>
+</html>
